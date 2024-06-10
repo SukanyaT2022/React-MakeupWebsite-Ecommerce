@@ -21,8 +21,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Product" element={<Product />} />
-        <Route path="/detail/:id" element={<ProductDetail onHandleCart={handleCart}/>} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/detail/:id" element={<ProductDetail onHandleCart={handleCart}/>}  />
+        <Route path="/cart" element={<Cart data = {dataFromProductDet}/>} />
       </Routes>
     </BrowserRouter>
     </div>
